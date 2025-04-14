@@ -371,6 +371,10 @@ plt.show()
 *   **Gap:** A significant gap between the training and validation curves suggests overfitting.
 *   **Validation Curve Trend:** If the validation loss/metric starts increasing while the training loss continues decreasing, it's a clear sign of overfitting. If both curves remain high, it might indicate underfitting.
 
+
+<img src="./img/learning-curves.png" width="50%">
+
+
 **4.2 Understanding Overfitting vs. Underfitting**
 
 *   **Underfitting:**
@@ -579,6 +583,10 @@ plt.axvline(x=0, color='gray', linestyle='--', linewidth=0.8)
 plt.show()
 ```
 
+
+<img src="./img/loss.png" width="50%">
+
+
 ### Choosing Between MAE and MSE for Regression
 
 Both MAE and MSE are valid loss functions for regression, but they have different properties and sensitivities:
@@ -594,6 +602,7 @@ Both MAE and MSE are valid loss functions for regression, but they have differen
 3.  **Interpretability:**
     *   **MAE:** Directly interpretable as the average absolute error in the original units of the target variable.
     *   **MSE:** Units are squared, making direct interpretation harder. The square root (RMSE) is often calculated to bring it back to the original units.
+
 
 **Which to Choose?**
 
