@@ -1,4 +1,4 @@
-# Phase 2
+# Demo
 
 **Objective:** Convert the Phase 1 mock Gradio application to use live Gemini API calls for generating support tips, demonstrating instruct prompting, parameter tuning, and JSON output.
 

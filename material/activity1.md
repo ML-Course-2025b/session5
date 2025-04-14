@@ -1,4 +1,4 @@
-# Lab Activity: Exploring the Gemini API
+# Exploring the Gemini API
 
 **Objective:** To collaboratively interact with a large language model (LLM) via an Application Programming Interface (API), we’ll use Google's models as our primary example. This approach enables us to leverage powerful, pre-trained models without managing the underlying infrastructure. We’ll explore the capabilities of the LLM API and demonstrate how to integrate its features into simple Gradio interfaces.
 
@@ -819,5 +819,5 @@ except Exception as e:
 
 ```
 
-While not required for completing this lab, incorporating `try...except` blocks is a standard practice for writing more reliable and user-friendly applications that interact with external services or process potentially unpredictable data. You should consider adding it when building your final project code. Here's a [demo](./ativity2-v1.md).
+While not required for completing this lab, incorporating `try...except` blocks is a standard practice for writing more reliable and user-friendly applications that interact with external services or process potentially unpredictable data. You should consider adding it when building your final project code. Here's a [demo](./activity1-v1.md).
 
