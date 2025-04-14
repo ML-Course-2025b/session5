@@ -278,6 +278,11 @@ Before training, the model needs to be configured for the learning process. This
 *   **`metrics`:** A list of metrics used to monitor the model's performance during training and evaluation. These are not used for optimization but provide additional insights.
     *   `['mae']` (Mean Absolute Error) is often used alongside MSE for regression. MAE calculates the average of the absolute differences and is interpretable in the same units as the target variable.
 
+
+<img src="./img/mae.png" width="50%">
+
+
+
 ```python
 # Compile the model
 model.compile(optimizer='adam',
@@ -384,11 +389,20 @@ plt.show()
     *   *Definition:* The model learns the general patterns in the training data and performs well on unseen validation data.
     *   *Symptoms on Plots:* Both training and validation loss/metrics decrease and converge to low values, with minimal gap between them.
 
+
+<img src="./img/Underfitting-overfitting.png" width="50%">
+
+
+
 **4.3 Regularization Technique: Early Stopping**
 
 Early Stopping is a simple yet effective regularization technique to prevent overfitting by stopping the training process proactively. This section mirrors Activity 2, Part 2.
 
 *   **Concept:** Monitor a chosen metric (typically validation loss) during training. If the metric does not improve for a specified number of consecutive epochs (known as `patience`), stop the training. Optionally, restore the model weights from the epoch where the monitored metric was best.
+
+
+<img src="./img/Early-Stopping.png" width="50%">
+
 
 *   **Implementation in Keras:** Use the `EarlyStopping` callback.
 
