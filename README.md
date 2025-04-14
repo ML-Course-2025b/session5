@@ -69,7 +69,16 @@
 
 
 ----
+<details>
+<summary>Links used in the Lecture</summary>
 
+- Draw.io
+- [Visualization Tool](https://playground.tensorflow.org)  
+- [Google ML Crash Course – Activation Functions](https://developers.google.com/machine-learning/crash-course/neural-networks/activation-functions) 
+- [Kaggle: Intro to Deep Learning](https://www.kaggle.com/learn/intro-to-deep-learning)  
+
+<!-- - [Slides](./material/lec_4_part1.ipynb) -->
+</details>
 
 <!-- 
 
