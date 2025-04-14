@@ -491,12 +491,8 @@ These foundational concepts are applicable across various deep learning tasks. F
 Understanding the principles covered in this material is essential before delving into these more advanced architectures.
 
 
-
-
-### 
-
 ---
 ## Useful Links
 
-- 
-- 
+- [Book: Deep Learning from Scratch, By Seth Weidman](https://metropolia.finna.fi/Record/nelli15.4100000009347178)
+- [Intro to Deep Learning](https://www.kaggle.com/learn/intro-to-deep-learning)

@@ -1,5 +1,9 @@
 # Homework
 
+> [!IMPORTANT]  
+> - When submitting to OMA, please use the updated template. It includes a section to indicate each group member's contribution as a percentage.  
+
+
 - **Due Date:** 2025-04-21
 - **Submission Method:** Google Drive
 
