@@ -396,9 +396,9 @@ plt.show()
 
 **4.3 Regularization Technique: Early Stopping**
 
-Early Stopping is a simple yet effective regularization technique to prevent overfitting by stopping the training process proactively. This section mirrors Activity 2, Part 2.
+Overfitting occurs when a model learns the training data too well, including its noise and specific idiosyncrasies, leading to poor performance on new, unseen data. While visualizing training history helps *diagnose* overfitting, we need techniques to *prevent* or *mitigate* it. Early Stopping is a simple yet effective regularization technique.
 
-*   **Concept:** Monitor a chosen metric (typically validation loss) during training. If the metric does not improve for a specified number of consecutive epochs (known as `patience`), stop the training. Optionally, restore the model weights from the epoch where the monitored metric was best.
+*   **Concept:** Monitor a chosen metric (typically validation loss, `val_loss`) during training. If the metric does not improve for a specified number of consecutive epochs (defined by the `patience` parameter), stop the training process. This prevents the model from continuing to train into the overfitting regime where validation performance degrades. Optionally, using `restore_best_weights=True` ensures the model weights are reverted to the state from the epoch where the monitored metric showed the best performance.
 
 
 <img src="./img/Early-Stopping.png" width="50%">
@@ -491,7 +491,10 @@ Early Stopping is a simple yet effective regularization technique to prevent ove
     *   **Improves Generalization:** Often results in models that perform better on unseen data because training stops near the point of optimal validation performance.
     *   **Saves Time and Resources:** Avoids running unnecessary training epochs, saving computation time.
 
-
+*   **Other Regularization Techniques and Layer Types:**
+    *   Early Stopping is just one approach to combat overfitting. Another widely used technique involves adding **Dropout layers** (`keras.layers.Dropout`) to the model. Dropout works by randomly setting a fraction of neuron activations to zero during each training update, forcing the network to learn more robust representations that are less reliant on any single neuron.
+    *   Techniques like Dropout and Batch Normalization (which helps stabilize training) are often used together. You can learn more about them here: [Dropout and Batch Normalization on Kaggle](https://www.kaggle.com/code/ryanholbrook/dropout-and-batch-normalization)
+    *   Furthermore, remember that deep learning involves many specialized layer types beyond the `Dense` (fully connected) layers used in this introductory example. Layers like `Conv2D` (for images) and `LSTM` or `GRU` (for sequential data) form the basis of powerful architectures tailored to specific data types, as mentioned in the final section.
 
 
 ----
