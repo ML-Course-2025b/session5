@@ -18,7 +18,7 @@ Next week’s session will cover more theory about how LLMs work internally, whi
 There are several options for calling an LLM API. In this course, we will focus on methods that allow you to experiment with powerful models at no cost:
 
 - [GitHub Models](https://github.com/marketplace/models) — provides access to APIs like OpenAI, Mistral, and others  
-- Gemini models from Google — provides access to the Gemini family of LLMs. 
+- [Gemini models](https://ai.google.dev/gemini-api/docs/models) from Google — provides access to the Gemini family of LLMs. 
 
 > [!NOTE]  
 > Here's the recommended Workflow:
@@ -104,8 +104,8 @@ GOOGLE_API_KEY = userdata.get('GOOGLE_API_KEY')
 
 ### Install SDK
 
-```python
-# %pip install -U -q 'google-genai'
+```
+%pip install -U -q 'google-genai'
 ```
 
 *   **Explanation:** This command installs or updates the necessary Python library, `google-genai`. This library, provided by Google, contains the functions and classes needed to interact with the Gemini API easily from Python code. The `-U` flag ensures you get the latest version, and `-q` makes the installation process quiet (less output).
@@ -160,8 +160,13 @@ Markdown(response.text)
 
 ### Text Generation with Gradio Interface
 
+
+```
+%pip install gradio # Install Gradio if not already installed
+```
+
+
 ```python
-# %pip install gradio # Install Gradio if not already installed
 import gradio as gr
 # from IPython.display import Markdown # Already imported
 
@@ -419,7 +424,8 @@ try:
         # Alternative: safety_settings can sometimes be passed as a direct argument too
         # safety_settings=safety_settings
     )
-    Markdown(response.text)
+    #Markdown(response.text)
+    print(response.text)    
 except Exception as e:
     # Responses might be blocked entirely if they violate stricter settings.
     # Check response.prompt_feedback for safety ratings/blocks
@@ -464,11 +470,14 @@ chat = client.chats.create(
 # Send the first user message
 response = chat.send_message("Write a function that checks if a year is a leap year.")
 Markdown(response.text) # Display first response
+```
 
+```python
 # Send a follow-up message; the chat object maintains history
 response = chat.send_message("Okay, write a unit test of the generated function.")
 Markdown(response.text) # Display second response
 ```
+
 
 *   **Explanation:** This code sets up and conducts a multi-turn conversation.
     *   `system_instruction`: An optional initial instruction defining the AI's persona or core task for the entire chat session.
@@ -661,7 +670,7 @@ print(json_output)
 # Expected: {"name": "John Smith", "email": "jsmith@example.com", "phone": "987-654-3210"}
 ```
 *   **Use Case:** Parsing unstructured text like emails or meeting transcripts to extract key information into a usable format. Could be wrapped in a Gradio interface taking text input and outputting formatted contact details or the raw JSON.
-
+<!-- 
 **2. Summarizing Action Items (Raw JSON Schema):**
 
 ```python
@@ -706,9 +715,9 @@ json_output = summarize_actions(notes)
 print(json_output)
 # Expected structure: {"summary": "...", "action_items": [{"task": "Finalize mockups", "assignee": "Alice/Design team", "due_date": "Friday"}, ...]}
 ```
-*   **Use Case:** Processing meeting minutes or project updates to automatically generate task lists. Pydantic is generally recommended for complex schemas, but raw JSON schema dictionaries are also supported.
+*   **Use Case:** Processing meeting minutes or project updates to automatically generate task lists. Pydantic is generally recommended for complex schemas, but raw JSON schema dictionaries are also supported. -->
 
-**3. Generating Product Descriptions:**
+**2. Generating Product Descriptions:**
 
 ```python
 # Assume necessary imports: BaseModel, Field, List, client, types, MODEL_ID
