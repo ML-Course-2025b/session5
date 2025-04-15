@@ -1,28 +1,29 @@
 # Homework
 
 > [!IMPORTANT]  
+> - Please upload all Week 5 deliverables into a single folder on Google Drive and share the link.
 > - When submitting to OMA, please use the updated template. It includes a section to indicate each group member's contribution as a percentage.  
 
 
 - **Due Date:** 2025-04-21
 - **Submission Method:** Google Drive
 
-**Objective:** To replace the mock functionality of your Part 1 application concept with real logic that calls the Gemini API. You will demonstrate the use of instruct prompting, parameter tuning, and JSON structured output in your implementation.
+**Objective:** To replace the mock functionality of your Phase 1 application concept with real logic that calls the Gemini API. You will demonstrate the use of instruct prompting, parameter tuning, and JSON structured output in your implementation.
 This task directly applies the concepts from this week's session to your ongoing project, moving it from a static mock-up to a dynamic, AI-powered application.
 
-**Context:** Part 1 involved designing a mock application interface. Part 2 requires implementing the core backend logic using Gemini, which will eventually power that interface.
+**Context:** Phase 1 involved designing a mock application interface. Phase 2 requires implementing the core backend logic using Gemini, which will eventually power that interface.
 
 **Instructions:**
 
 This task involves two main stages: 
 1. Developing and testing the core Gemini interaction logic independently. 
-2. Integrating this logic into your Part 1 Gradio structure.
+2. Integrating this logic into your Phase 1 Gradio structure.
 
 ### Stage 1: Develop and Test Core Gemini Logic
 
 Focus first on writing and testing the Python code that interacts with the Gemini API, separate from your Gradio UI code.
 
-1.  **Define the Core Task:** Based on your Part 1 project idea, clearly define what specific task Gemini should perform. What input will it receive (conceptually, e.g., "a user's question," "a piece of text to analyze," "a request for creative content")? What output should it generate?
+1.  **Define the Core Task:** Based on your Phase 1 project idea, clearly define what specific task Gemini should perform. What input will it receive (conceptually, e.g., "a user's question," "a piece of text to analyze," "a request for creative content")? What output should it generate?
 
 2.  **Create a Python Function:** Write a standalone Python function (e.g., `get_gemini_data`, `process_input_with_gemini`) that encapsulates the interaction with Gemini. This function should:
     *   Accept necessary input arguments (e.g., `user_prompt`, `input_text`).
@@ -101,14 +102,14 @@ extract_task_from_text(sample_text)
 
 ### Stage 2: Integrate Gemini Logic into Gradio Application
 
-Once your core Gemini function works reliably standalone, integrate it into your Part 1 Gradio UI.
+Once your core Gemini function works reliably standalone, integrate it into your Phase 1 Gradio UI.
 
 1.  **Prepare Your Function for Gradio:** Modify your standalone function slightly if needed:
-    *   Ensure it accepts input directly from the Gradio input components defined in your Part 1 UI.
+    *   Ensure it accepts input directly from the Gradio input components defined in your Phase 1 UI.
     *   Modify the `return` value. Instead of just printing, parse the JSON response (`json.loads(response.text)`) and format the extracted data into a string suitable for display in your Gradio output component(s) (e.g., `gr.Markdown`, `gr.Textbox`).
 
 2.  **Update Gradio Interface:**
-    *   Open your Part 1 Gradio code.
+    *   Open your Phase 1 Gradio code.
     *   Find the `gr.Interface(...)` definition.
     *   Change the `fn` argument to point to your *new*, tested Gemini interaction function (the one prepared in step 1 of this stage).
     *   Ensure the `inputs` and `outputs` arguments of `gr.Interface` match what your new function expects and returns.

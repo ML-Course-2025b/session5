@@ -2,7 +2,7 @@
 
 
 > [!NOTE]  
-> - [How to share Your Colab Notebook](./material/colab.md)
+> - [How to share your work](./material/colab.md)
 > - [Zoom Recordings](https://metropoliafi-my.sharepoint.com/:f:/g/personal/samiben_metropolia_fi/EuSPkRmWcYpGsXdjFhE2k80BaZBR-EeccL7AHlnTQya-6w)
 > - [Project Grading](https://github.com/ML-Course-2025/week1/blob/main/material/about-course.md)
 >   - The project grade will be based on deliverables from Phase 1, Phase 2, and Phase 3 (total of 260 points).  
