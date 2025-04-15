@@ -16,7 +16,7 @@
 
 ### Topics
 
-- Interacting with multimodal LLMs from the Gemini family
+- AI Application: Interacting with multimodal LLMs from the Gemini family
 - Fundamentals of Deep Learning with Keras
 
 ---
@@ -76,6 +76,7 @@
 - [Visualization Tool](https://playground.tensorflow.org)  
 - [Google ML Crash Course – Activation Functions](https://developers.google.com/machine-learning/crash-course/neural-networks/activation-functions) 
 - [Kaggle: Intro to Deep Learning](https://www.kaggle.com/learn/intro-to-deep-learning)  
+<!-- - https://excalidraw.com/ -->
 
 <!-- - [Slides](./material/lec_4_part1.ipynb) -->
 </details>

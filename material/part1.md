@@ -306,14 +306,9 @@ response = client.models.generate_content(
     contents="Tell me how the internet works, but pretend I'm a puppy who only understands squeaky toys.",
     config=types.GenerateContentConfig(
         temperature=0.4,       # Controls randomness (lower = more deterministic)
-        top_p=0.95,            # Nucleus sampling parameter
-        top_k=20,              # Limits sampling to top K likely tokens
         candidate_count=1,     # Number of response candidates to generate
         seed=5,                # For reproducible results (if possible with model)
         max_output_tokens=100, # Maximum length of the response
-        stop_sequences=["STOP!"], # Sequences where generation should stop
-        presence_penalty=0.0,  # Discourages repeating tokens already present
-        frequency_penalty=0.0, # Discourages repeating tokens frequently
     )
 )
 
