@@ -72,7 +72,7 @@
 <details>
 <summary>Links used in the Lecture</summary>
 
-- Draw.io
+- Draw.io or https://excalidraw.com/
 - [Visualization Tool](https://playground.tensorflow.org)  
 - [Google ML Crash Course – Activation Functions](https://developers.google.com/machine-learning/crash-course/neural-networks/activation-functions) 
 - [Kaggle: Intro to Deep Learning](https://www.kaggle.com/learn/intro-to-deep-learning)  

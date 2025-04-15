@@ -20,7 +20,7 @@ Several software libraries facilitate the development of deep learning models. T
     *   **TensorFlow:** Developed by Google, TensorFlow is a powerful open-source library for numerical computation and large-scale machine learning. It provides low-level APIs for fine-grained control but can be complex for beginners.
     *   **Keras:** Keras is a high-level API for building and training neural networks. It emphasizes user-friendliness, modularity, and rapid experimentation. Keras can run on top of different backends, including TensorFlow (most common), Theano, or CNTK. We will use the `tensorflow.keras` implementation. Its ease of use makes it an excellent choice for both beginners and practitioners needing fast prototyping and deployment.
 
-*   **PyTorch:**
+*   **PyTorch/[Fastai](https://docs.fast.ai/):**
     *   Developed by Facebook's AI Research lab (FAIR), PyTorch is another major open-source library. It is widely adopted, especially in the research community, and is known for its Pythonic feel, flexibility, and dynamic computation graphs (allowing network structure changes during runtime).
 
 **Focus:** This summary will utilize **Keras (specifically `tensorflow.keras`)** for all practical examples due to its clear syntax and streamlined workflow for common tasks.
