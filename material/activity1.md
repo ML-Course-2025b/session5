@@ -36,7 +36,7 @@ Now, write and execute the Python code to install the necessary library and set 
 
 1.  **Install the SDK:** Run the following command in a code cell.
     ```python
-    %pip install -U -q google-generai gradio
+    %pip install -U -q google-genai gradio
     ```
     *(Explanation: This installs the Google GenAI SDK and the Gradio library.)*
 
